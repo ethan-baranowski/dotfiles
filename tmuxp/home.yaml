@@ -1,0 +1,12 @@
+session_name: home
+windows:
+  - window_name: main
+    layout: tiled
+    panes:
+      - shell_command:
+          - cd ~
+      - shell_command:
+          - neofetch
+      - shell_command:
+          - docker exec -ti ollama-gpu ollama run llama2
+
